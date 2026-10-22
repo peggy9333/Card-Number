@@ -132,11 +132,6 @@ button.active{
 
   <button class="reset" onclick="resetAll()">重新開始</button>
 
-  <p class="hint">
-    提醒：話術 A／B／C 依原流程圖標示；
-    如需逐字話術，請使用內部核定版本。
-  </p>
-
 </main>
 
 <script>
@@ -325,7 +320,7 @@ function render() {
     if (!answers.seen) {
       showResult(
         resultBox,
-        "引導透過官網 > 客戶服務 > 「普通卡記名」\n或  iPASS MONEY  APP > 票卡 > 匯入記名卡查詢"
+        "引導客戶透過以下兩種方式嘗試查看：\n方式一、官網 > 客戶服務 > 「普通卡記名」\n 方式二、iPASS MONEY  APP > 票卡 > 匯入記名卡查詢"
       );
       return;
     }

@@ -136,7 +136,7 @@ button.active{
 
 <script>
 const scenarios = {
-  police: "警局／客運來電",
+  police: "警局／公車客運業者來電",
   general: "一般用戶來電"
 };
 
@@ -238,11 +238,11 @@ function render() {
     scenarioBox.appendChild(button);
   });
 
-  // 警局／客運來電
+  // 警局／公車客運業者來電
   if (current === "police") {
     showResult(
       resultBox,
-      "不須核資，且不論是否為記名卡都可直接提供卡號／內碼／十禁制內碼。"
+      "不須核資，不論是否為記名卡，只要對方有提供卡號／內碼／十禁制內碼，要反查卡號／內碼／十禁制內碼都可以。\n需記錄清楚來電者單位、姓氏、電話及分機。"
     );
     return;
   }
